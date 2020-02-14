@@ -10,16 +10,58 @@
 
 <body>
     <form action="">
-        
+
         <h1>Code Crew Registration Form</h1>
+        <img src="https://static.wixstatic.com/media/0b0467_35de4013954645dd9e34afcc64538afc~mv2.png/v1/fill/w_272,h_48,al_c,q_85,usm_0.66_1.00_0.01/0b0467_35de4013954645dd9e34afcc64538afc~mv2.webp" alt="">
 
-        <label id="email" for="Email">Email Address</label>
-        <input id="emailbox" type="email" name="Email" placeholder="Enter Email"> 
+        <div id="Email">
 
-        <label id="password" for="Password">Password</label>
-        <input id="passbox" type="email" name="Password" placeholder="Enter Password"> 
-       
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="Email" placeholder="Enter Email">
+
+        </div>
+        <div id="password">
+
+            <label for="Password">Password</label>
+            <input id="Password" type="password" name="Password" placeholder="Enter Password">
+
+        </div>
+
+        <div id="Firstname">
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" name="First Name" placeholder="Enter First Name" required>
+        </div>
+
+        <div id="Lastname">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" type="text" name="Last Name" placeholder="Enter Last Name" required> 
+        </div>
+        <h2>Optional Information</h2>
+
+        <ul>
+            <li><input type="radio"name="gender" >Male</li>
+
+            <li><input type="radio" name="gender">Female</li>
+            <li><input type="radio"name="gender">Prefer Not To Answer</li>
+        </ul>
+        <div id="birth"><label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="Birthday" placeholder="dd/mm/yyyy">
+        </div>
         
+<div id="Terms"><label for="terms">I Agree to the Terms and Conditions</label>
+    <input type="checkbox" id="terms">
+</div>
+        
+<p id="button">
+        <button>Submit Registration</button>
+    </p>
+
+
+
+        <!-- notes, to help style into css, create DIV for each label/input -->
+
+        <!-- labels and boxes are inline by defaul (next to each other) use display block in css to have boxes directly under label -->
+
 
     </form>
 
